@@ -1,0 +1,10 @@
+^C:\USERS\ROHIT\ONEDRIVE\PES\SEM-6\OOAD\PROJECT\CROW_PROJECT\BUILD\CMAKEFILES\9E45A916AFFF47643A98FBFB57A2B83E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project -BC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/crow_project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

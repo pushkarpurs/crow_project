@@ -36,50 +36,46 @@ public:
             return crow::response(signupForm());
         });
 		
-		CROW_ROUTE(app, "/w")([&model]() {
+
+        // In the login POST route, update the success branch:
+        // Update the "/w" route:
+        CROW_ROUTE(app, "/w")([&model]() {
             auto user = model.getUser().value();
-			return crow::response(welcomePage(user.username, user.role));
+            return crow::response(welcomePage(user.username, user.role, model.getPortfolioInfo()));
         });
-		
-        // Login Logic
+
+        // In the login POST route:
         CROW_ROUTE(app, "/login").methods(crow::HTTPMethod::POST)
         ([&model](const crow::request& req) {
             auto [username, password] = extractCredentials(req.body);
-			
-			std::cout<<"Logging In"<<username <<"111"<<password<<std::endl;
-			
-			int rt=model.login(username, password);
-			
-            if (rt==0) {
+            int rt = model.login(username, password);
+            if (rt == 0) {
                 auto user = model.getUser().value();
-				std::cout<<"Logging In"<<user.role<<std::endl;
-                return crow::response(welcomePage(user.username, user.role));
-            } else if(rt==1) {
+                return crow::response(welcomePage(user.username, user.role, model.getPortfolioInfo()));
+            } else if (rt == 1) {
                 return crow::response(loginForm("Invalid username or password."));
+            } else {
+                return crow::response(loginForm("Please Logout First"));
             }
-			else{
-				return crow::response(loginForm("Please Logout First"));
-			}
-        });
-		
-		CROW_ROUTE(app, "/signup").methods(crow::HTTPMethod::POST)
-        ([&model](const crow::request& req) {
-            auto [username, password] = extractCredentials(req.body);
-			
-			std::cout<<"Signing up In"<<username <<"111"<<password<<std::endl;
-			
-			int rt=model.signup(username, password);
-			
-            if (rt==0) {
-                return crow::response(welcomePage(username, "trader"));
-            } else if(rt==1) {
-                return crow::response(signupForm("Username already taken"));
-            }
-			else{
-				return crow::response(signupForm("Please Logout First"));
-			}
         });
 
+        // In the signup POST route:
+        CROW_ROUTE(app, "/signup").methods(crow::HTTPMethod::POST)
+        ([&model](const crow::request& req) {
+            auto [username, password] = extractCredentials(req.body);
+            int rt = model.signup(username, password);
+            if (rt == 0) {
+                // Use three parameters here, e.g. using model.getPortfolioInfo() as portfolio info.
+                return crow::response(welcomePage(username, "trader", model.getPortfolioInfo()));
+            } else if (rt == 1) {
+                return crow::response(signupForm("Username already taken"));
+            } else {
+                return crow::response(signupForm("Please Logout First"));
+            }
+        });
+        CROW_ROUTE(app, "/stock_info")([&model]() {
+            return crow::response(stockInfoForm(model.getStocks()));
+        });
         // Logout Logic
         CROW_ROUTE(app, "/logout")
         ([&model](const crow::request& req) 
@@ -107,6 +103,58 @@ public:
             auto msg=req.body.substr(5);
 			return crow::response(chatForm(model.chatUpdate(msg)));
         });
+
+        CROW_ROUTE(app, "/buy").methods(crow::HTTPMethod::GET)
+([](){
+    return crow::response(buyForm());
+});
+
+// POST route to process the Buy order.
+CROW_ROUTE(app, "/buy").methods(crow::HTTPMethod::POST)
+([&model](const crow::request& req) {
+    // Expected body format: "stockSymbol=XYZ&quantity=10"
+    std::string body = req.body;
+    size_t pos1 = body.find("stockSymbol=");
+    size_t pos2 = body.find("&quantity=");
+    if (pos1 == std::string::npos || pos2 == std::string::npos) {
+        return crow::response(buyForm("Invalid input!"));
+    }
+    std::string stockSymbol = body.substr(pos1 + 12, pos2 - (pos1 + 12));
+    std::string quantityStr = body.substr(pos2 + 10);
+    int quantity = std::stoi(quantityStr);
+    
+    bool success = model.buyStock(stockSymbol, quantity);
+    if (success)
+        return crow::response(stockInfoForm("Purchase successful!"));
+    else
+        return crow::response(buyForm("Purchase failed!"));
+});
+// GET route to display the Sell Stock form.
+CROW_ROUTE(app, "/sell").methods(crow::HTTPMethod::GET)
+([](){
+    return crow::response(sellForm());
+});
+
+// POST route to process the Sell order.
+CROW_ROUTE(app, "/sell").methods(crow::HTTPMethod::POST)
+([&model](const crow::request& req) {
+    // Expected body format: "stockSymbol=XYZ&quantity=10"
+    std::string body = req.body;
+    size_t pos1 = body.find("stockSymbol=");
+    size_t pos2 = body.find("&quantity=");
+    if (pos1 == std::string::npos || pos2 == std::string::npos) {
+        return crow::response(sellForm("Invalid input!"));
+    }
+    std::string stockSymbol = body.substr(pos1 + 12, pos2 - (pos1 + 12));
+    std::string quantityStr = body.substr(pos2 + 10);
+    int quantity = std::stoi(quantityStr);
+    
+    bool success = model.sellStock(stockSymbol, quantity);
+    if (success)
+        return crow::response(stockInfoForm("Sale successful!"));
+    else
+        return crow::response(sellForm("Sale failed!"));
+});
 		
     }
 };

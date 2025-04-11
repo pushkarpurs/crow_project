@@ -43,30 +43,26 @@ std::string signupForm(const std::string& message = "") {
 }
 
 
-std::string welcomePage(const std::string& username, const std::string& role) {
-    std::cout << username << " " << role << std::endl;
-
+std::string welcomePage(const std::string& username, const std::string& role, const std::string& portfolioInfo) {
     return R"(
         <html>
-		<head><title>Dashboard</title></head>
+        <head><title>Dashboard</title></head>
         <body>
             <h1>Hello, )" + role + " " + username + R"(</h1>
-			<div style="display: flex; gap: 10px;">
-            <button onclick="window.location.href='/logout'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
-                Logout
-            </button>
-			<button onclick="window.location.href='/r'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
-                Recommendations
-            </button>
-			<button onclick="window.location.href='/c'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
-                Discussions
-            </button>
-			</div>
+            <div>
+                <h2>Your Portfolio</h2>
+                )" + portfolioInfo + R"(
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button onclick="window.location.href='/logout'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Logout</button>
+                <button onclick="window.location.href='/r'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Recommendations</button>
+                <button onclick="window.location.href='/c'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Discussions</button>
+                <button onclick="window.location.href='/stock_info'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Stock Information</button>
+            </div>
         </body>
         </html>
     )";
 }
-
 
 std::string logoutPage() {
     return R"(
@@ -118,4 +114,69 @@ std::string chatForm(const std::string& message = "") {
         </body>
         </html>
     )";
+}
+
+std::string stockInfoForm(const std::string& stocks = "") {
+    return R"(
+        <html>
+        <head><title>Stock Information</title></head>
+        <body>
+            <h2>Stock Information</h2>
+            <div>
+                )" + stocks + R"(
+            </div>
+            <button onclick="window.location.href='/w'" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; margin-top: 10px;">
+                Dashboard
+            </button>
+                    <button onclick="window.location.href='/buy'" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; margin-top: 10px;">
+                Buy
+            </button>
+            <button onclick="window.location.href='/sell'" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; margin-top: 10px;">
+                Sell
+            </button>
+        </body>
+        </html>
+    )";
+}
+
+std::string buyForm(const std::string& message = "") {
+    return std::string(R"DELIM(
+<html>
+<head><title>Buy Stock</title></head>
+<body>
+    <h2>Buy Stock</h2>
+    <form method="POST" action="/buy">
+        Stock Symbol: <input name="stockSymbol" type="text" /><br/>
+        Quantity: <input name="quantity" type="number" /><br/>
+        <input type="submit" value="Buy" />
+    </form>
+    <p style='color:red;'>)DELIM") + message + std::string(R"DELIM(
+    </p>
+    <button onclick="window.location.href='/w'" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; margin-top: 10px;">
+        Dashboard
+    </button>
+</body>     
+</html>
+)DELIM");
+} 
+
+std::string sellForm(const std::string& message = "") {
+    return std::string(R"DELIM(
+<html>
+<head><title>Sell Stock</title></head>
+<body>
+    <h2>Sell Stock</h2>
+    <form method="POST" action="/sell">
+        Stock Symbol: <input name="stockSymbol" type="text" /><br/>
+        Quantity: <input name="quantity" type="number" /><br/>
+        <input type="submit" value="Sell" />
+    </form>
+    <p style='color:red;'>)DELIM") + message + std::string(R"DELIM(
+    </p>
+    <button onclick="window.location.href='/w'" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; margin-top: 10px;">
+        Dashboard
+    </button>
+</body>
+</html>
+)DELIM");
 }

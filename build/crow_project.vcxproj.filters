@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\model.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{41700A02-1578-3DDC-A3EC-D3FE20A74A7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8F40D5A2-751A-3EAB-A11D-5B0BFEB92F36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

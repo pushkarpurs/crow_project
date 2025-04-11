@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.12)
 project(crow_project)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_TOOLCHAIN_FILE "C:/Users/Dell/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+set(CMAKE_TOOLCHAIN_FILE "C:/Users/rohit/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
 
 find_package(Boost REQUIRED)
 find_package(Crow CONFIG REQUIRED)
