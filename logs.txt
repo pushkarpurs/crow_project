@@ -1,0 +1,2 @@
+User trader bought 5 shares of MSFT at $298.896 per share.
+User trader sold 3 shares of MSFT at $298.896 per share, realizing a profit of $0

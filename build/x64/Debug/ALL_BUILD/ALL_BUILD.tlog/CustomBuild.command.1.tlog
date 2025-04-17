@@ -1,6 +1,6 @@
-^C:\USERS\ROHIT\ONEDRIVE\PES\SEM-6\OOAD\PROJECT\CROW_PROJECT\CMAKELISTS.TXT
+^E:\PUSHKAR\SEM 6\OOAD\OOAD_PROJECT\CROW_PROJECT\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project -BC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build --check-stamp-file C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/CMakeFiles/generate.stamp
+C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\bin\cmake.exe "-SE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project" "-BE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build" --check-stamp-file "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

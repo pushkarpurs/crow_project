@@ -22,10 +22,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CC833181-73B6-383F-A0D6-334915220B49}</ProjectGuid>
+    <ProjectGuid>{C3932437-7D48-3018-879B-74A5712B0230}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <VcpkgEnabled>false</VcpkgEnabled>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>crow_project</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -60,25 +60,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crow_project.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crow_project</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crow_project.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crow_project</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crow_project.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crow_project</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crow_project.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crow_project</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -87,7 +87,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rohit/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Dell/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -95,12 +95,10 @@
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ASIO_STANDALONE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -109,10 +107,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ASIO_STANDALONE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,7 +120,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/rohit/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/Debug/crow_project.exe -installedDir C:/Users/rohit/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/Dell/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/Debug/crow_project.exe" -installedDir C:/Users/Dell/vcpkg/installed/x64-windows/debug/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -137,8 +135,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/Debug/crow_project.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/Debug/crow_project.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/Debug/crow_project.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/Debug/crow_project.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -147,19 +145,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rohit/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Dell/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -170,10 +165,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +178,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/rohit/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/Release/crow_project.exe -installedDir C:/Users/rohit/vcpkg/installed/x64-windows/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/Dell/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/Release/crow_project.exe" -installedDir C:/Users/Dell/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -198,8 +193,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/Release/crow_project.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/Release/crow_project.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/Release/crow_project.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/Release/crow_project.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -208,19 +203,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rohit/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Dell/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -231,10 +223,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -244,7 +236,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/rohit/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/MinSizeRel/crow_project.exe -installedDir C:/Users/rohit/vcpkg/installed/x64-windows/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/Dell/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/MinSizeRel/crow_project.exe" -installedDir C:/Users/Dell/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,8 +251,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/MinSizeRel/crow_project.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/MinSizeRel/crow_project.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/MinSizeRel/crow_project.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/MinSizeRel/crow_project.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -269,20 +261,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rohit/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Dell/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -291,10 +280,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rohit\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dell\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -304,7 +293,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/rohit/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/RelWithDebInfo/crow_project.exe -installedDir C:/Users/rohit/vcpkg/installed/x64-windows/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/Dell/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/RelWithDebInfo/crow_project.exe" -installedDir C:/Users/Dell/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -319,8 +308,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/RelWithDebInfo/crow_project.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/RelWithDebInfo/crow_project.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/RelWithDebInfo/crow_project.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/RelWithDebInfo/crow_project.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -328,11 +317,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\CMakeLists.txt">
+    <CustomBuild Include="E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project -BC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build --check-stamp-file C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/CMakeFiles/generate.stamp
+C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\bin\cmake.exe "-SE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project" "-BE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build" --check-stamp-file "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -340,12 +329,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\rohit\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\Dell\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeFindDependencyMacro.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindBoost.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project -BC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build --check-stamp-file C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/CMakeFiles/generate.stamp
+C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\bin\cmake.exe "-SE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project" "-BE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build" --check-stamp-file "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -353,12 +342,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\rohit\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\Dell\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeFindDependencyMacro.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindBoost.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project -BC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build --check-stamp-file C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/CMakeFiles/generate.stamp
+C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\bin\cmake.exe "-SE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project" "-BE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build" --check-stamp-file "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -366,12 +355,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\rohit\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\Dell\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeFindDependencyMacro.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindBoost.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project -BC:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build --check-stamp-file C:/Users/rohit/OneDrive/PES/Sem-6/OOAD/Project/crow_project/build/CMakeFiles/generate.stamp
+C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\bin\cmake.exe "-SE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project" "-BE:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build" --check-stamp-file "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -379,21 +368,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\rohit\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\rohit\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowConfig.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\CrowTargets.cmake;C:\Users\Dell\vcpkg\installed\x64-windows\share\crow\Findasio.cmake;C:\Users\Dell\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeFindDependencyMacro.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindBoost.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\FindThreads.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Users\Dell\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\3.28.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\main.cpp" />
-    <ClInclude Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\controller.hpp" />
-    <ClInclude Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\model.hpp" />
-    <ClInclude Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\view.hpp" />
+    <ClCompile Include="E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\main.cpp" />
+    <ClInclude Include="E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\controller.hpp" />
+    <ClInclude Include="E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\model.hpp" />
+    <ClInclude Include="E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\view.hpp" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\rohit\OneDrive\PES\Sem-6\OOAD\Project\crow_project\build\ZERO_CHECK.vcxproj">
-      <Project>{03C010AF-0253-3834-8465-30C58E6F7756}</Project>
+    <ProjectReference Include="E:\Pushkar\SEM 6\OOAD\OOAD_Project\crow_project\build\ZERO_CHECK.vcxproj">
+      <Project>{BDC05BAC-8799-3D00-9F64-1B08E66027C9}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

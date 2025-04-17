@@ -43,6 +43,10 @@ public:
             auto user = model.getUser().value();
             return crow::response(welcomePage(user.username, user.role, model.getPortfolioInfo()));
         });
+		
+		CROW_ROUTE(app, "/logs")([&model]() {
+            return crow::response(logsInfoForm(model.getLogs()));
+        });
 
         // In the login POST route:
         CROW_ROUTE(app, "/login").methods(crow::HTTPMethod::POST)

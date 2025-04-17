@@ -34,10 +34,12 @@ class UserModel {
     
 	std::unordered_map<std::string, User> users;
 	std::string usn = "";
-	// const std::string chat_file = "E:/Pushkar/SEM 6/OOAD/crow_project/chat.txt";
-	const std::string chat_file = "chat.txt";
+	const std::string chat_file = "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/chat.txt";
 	std::mutex file_mutex;
 	 // Hardcoded stocks with prices to simulate the market
+	 // Add this as a private member variable in the UserModel class
+	const std::string log_file = "E:/Pushkar/SEM 6/OOAD/OOAD_Project/crow_project/logs.txt";
+	std::mutex log_mutex;
 
 	public:
     
@@ -114,6 +116,11 @@ class UserModel {
 		h.second += quantity * currentPrice;     // increase total cost
 		std::cout << "User " << usn << " bought " << quantity << " shares of " 
 				  << stockSymbol << " at $" << currentPrice << " per share." << std::endl;
+		std::unique_lock<std::mutex> lock(log_mutex);
+		std::ofstream out(log_file, std::ios::app);
+		out << "User " << usn << " bought " << quantity << " shares of " 
+				  << stockSymbol << " at $" << currentPrice << " per share." << std::endl;
+		lock.unlock();
 		return true;
 	}
 	std::string getStocks() {
@@ -161,6 +168,12 @@ class UserModel {
 		std::cout << "User " << usn << " sold " << quantity << " shares of " 
 				  << stockSymbol << " at $" << currentPrice 
 				  << " per share, realizing a profit of $" << profitForSale << std::endl;
+		std::unique_lock<std::mutex> lock(log_mutex);
+		std::ofstream out(log_file, std::ios::app);
+		out << "User " << usn << " sold " << quantity << " shares of " 
+				  << stockSymbol << " at $" << currentPrice 
+				  << " per share, realizing a profit of $" << profitForSale << std::endl;
+		lock.unlock();
 		return true;
 	}
     int login(const std::string& username, const std::string& password) {
@@ -204,32 +217,32 @@ class UserModel {
 	
 	//Dont change this function
 	std::string askLLM(const std::string& input) {
-		// std::string command = "python callllm.py \"" + input + "\"";
-		// std::array<char, 256> buffer;
-		// std::string result_output;
-		// bool result_section_started = false;
+		std::string command = "python callllm.py \"" + input + "\"";
+		std::array<char, 256> buffer;
+		std::string result_output;
+		bool result_section_started = false;
 
-		// std::shared_ptr<FILE> pipe(popen(command.c_str(), "r"), pclose);
-		// if (!pipe) {
-			// throw std::runtime_error("Failed to run Python script.");
-			// return "Error";
-		// }
+		std::shared_ptr<FILE> pipe(popen(command.c_str(), "r"), pclose);
+		if (!pipe) {
+			throw std::runtime_error("Failed to run Python script.");
+			return "Error";
+		}
 
-		// while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-			// std::string line(buffer.data());
+		while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+			std::string line(buffer.data());
 
-			// if (!result_section_started && line.find("RESULT:") == 0) {
-				// result_section_started = true;
-			// }
+			if (!result_section_started && line.find("RESULT:") == 0) {
+				result_section_started = true;
+			}
 
-			// if (result_section_started) {
-				// result_output += line;
-			// }
-		// }
+			if (result_section_started) {
+				result_output += line;
+			}
+		}
 
-		// return result_output;
+		return result_output;
 		
-		return "Fosho you should invest in "+input;
+		//return "Fosho you should invest in "+input;
 	}
 	
     bool isLoggedIn(const std::string& username) {
@@ -280,6 +293,25 @@ class UserModel {
 		std::unique_lock<std::mutex> lock(file_mutex);
 
 		std::ifstream in(chat_file);
+		std::ostringstream chat_content;
+		std::string line;
+
+		while (std::getline(in, line)) {
+			chat_content << line << "<br/>";
+		}
+
+		return chat_content.str();
+	}
+	
+	std::string getLogs()
+	{
+		if(users[usn].role!="admin")
+		{
+			return "You do not have permission to read logs";
+		}
+		std::unique_lock<std::mutex> lock(log_mutex);
+
+		std::ifstream in(log_file);
 		std::ostringstream chat_content;
 		std::string line;
 

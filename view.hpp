@@ -454,6 +454,7 @@ std::string welcomePage(const std::string& username, const std::string& role, co
                     <button onclick="window.location.href='/stock_info'" class="btn btn-primary">Stock Information</button>
                     <button onclick="window.location.href='/r'" class="btn btn-primary">Recommendations</button>
                     <button onclick="window.location.href='/c'" class="btn btn-primary">Discussions</button>
+					<button onclick="window.location.href='/logs'" class="btn btn-primary">See Logs</button>
                     <button onclick="window.location.href='/logout'" class="btn btn-danger">Logout</button>
                 </div>
             </div>
@@ -1038,6 +1039,152 @@ std::string stockInfoForm(const std::string& stocks = "") {
 </html>
     )";
 }
+
+std::string logsInfoForm(const std::string& stocks = "") {
+    return R"(
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Information | StockTrader</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --secondary: #10b981;
+            --secondary-hover: #059669;
+            --danger: #ef4444;
+            --background: #f9fafb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --text-secondary: #6b7280;
+            --border: #e5e7eb;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .card {
+            background-color: var(--card);
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        .stocks-container {
+            margin-bottom: 1.5rem;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.375rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: var(--secondary-hover);
+        }
+        .footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        @media (max-width: 640px) {
+            .actions {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">StockTrader</div>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Stock Information</h2>
+                <div class="stocks-container">
+                    )" + stocks + R"(
+                </div>
+                
+                <div class="actions">
+                    <button onclick="window.location.href='/w'" class="btn btn-primary">Back to Dashboard</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            &copy; 2025 StockTrader. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
+    )";
+}
+
+
 
 std::string buyForm(const std::string& message = "") {
     return R"(
